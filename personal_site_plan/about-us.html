@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style/style.css">
     <title>About Us</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
             <a href="about-us.html">About Us</a>
         </nav>
     </header>
-    <main>
+    <main class="contact-form">
         <h1>About Us</h1>
         <h3>Please call us!!!!</h3>
         <div>
@@ -26,15 +27,22 @@
     <article>
         <h2>Contact info</h2>
     </article>
+    
+    <div id="feedback"></div>
+    <h2>Contact Us</h2>
+    <form action="" method="post" id="contactForm">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message"></textarea>
+        <input type="submit" value="Send">
+    </form>
     <div>
         <p>here put adress</p>
     </div>
-
-
     </main>
   
         <footer>
-            <p>wonderfull  craft © 2023 - Jennifer Gonzalezon </p> <nav> <a href="#contact-us">Contact Us</a>
+            <p>wonderfull  craft © 2023 - Jennifer Gonzalezon </p> <nav> <a href="about-us.html">About Us</a>
                 <div class="social">
                     <a href="https://facebook.com" target="_blank">
                         <img src="images/facebook.png" alt="fb icon">
