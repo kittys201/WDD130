@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style/style.css">
     <title>About Us</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
             <a href="about-us.html">About Us</a>
         </nav>
     </header>
-    <main>
+    <main class="contact-form">
         <h1>About Us</h1>
         <h3>Please call us!!!!</h3>
         <div>
@@ -26,16 +27,27 @@
         </div>
     <article>
         <h2>Contact info</h2>
+        <p>I made this page to teach those people who are attracted to:
+            - Do manual work such as embroidery or knitting and do not have the necessary training to do so.
+            - Those who already know about embroidery or knitting but want to learn new techniques or improve those they already know.
+            - People who want to learn how to market in this area but do not know how to do it or how to calculate a fair price for their work.</p>
     </article>
+    
+    <div id="feedback"></div>
+    <h2>Contact Us</h2>
+    <form action="" method="post" id="contactForm">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message"></textarea>
+        <input type="submit" value="Send">
+    </form>
     <div>
-        <p>here put adress</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1724.3293114870032!2d-46.526241108018226!3d-23.72833505744385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sbr!4v1700354149188!5m2!1ses-419!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-
-
     </main>
   
         <footer>
-            <p>wonderfull  craft © 2023 - Jennifer Gonzalezon </p> <nav> <a href="#contact-us">Contact Us</a>
+            <p>wonderfull  craft © 2023 - Jennifer Gonzalez </p> <nav> <a href="about-us.html">About Us</a>
                 <div class="social">
                     <a href="https://facebook.com" target="_blank">
                         <img src="images/facebook.png" alt="fb icon">
@@ -50,6 +62,22 @@
             </nav>
                 </footer>
     
-    
+                <script>
+                    // get the feedback div element so we can do something with it.
+                    const feedbackElement = document.getElementById('feedback');
+                    // get the form so we can read what was entered in it.
+                    const formElement = document.getElementById('contactForm');
+                    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+                    formElement.addEventListener('submit', function(e) {
+                        // stop the form from doing the default action.
+                        e.preventDefault();
+                        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                        feedbackElement.innerHTML = 'Hello ' + formElement.name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+                        // make the feedback element visible.
+                        feedbackElement.style.display = "block";
+                        // add a class to move everything down so our message doesn't cover it.
+                        document.body.classList.toggle('moveDown');
+                    });
+                </script>  
 </body>
 </html>
