@@ -10,7 +10,7 @@
     <div id="content">
     <header>
        
-        <nav>
+        <nav id="navbar" >
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/logo.png" alt="logo del site jennifer">
             </a>
@@ -74,6 +74,7 @@ The main difference is this: when we knit with straight needles, as we turn the 
     </main>
     <footer>
 <p>wonderfull  craft © 2023 - Jennifer Gonzalez </p> <nav> <a href="about-us.html">About Us</a>
+    <a href="site-plan.html">Site plan</a>
     <div class="social">
         <a href="https://facebook.com" target="_blank">
             <img src="images/facebook.png" alt="fb icon">
@@ -88,5 +89,19 @@ The main difference is this: when we knit with straight needles, as we turn the 
 </nav>
     </footer>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("scroll", function () {
+            var body = document.querySelector("body");
+            var scrollPosition = window.scrollY;
+
+            if (scrollPosition > 50) {
+                body.classList.add("scrolled");
+            } else {
+                body.classList.remove("scrolled");
+            }
+        });
+    });
+</script>
 </body>
 </html>
