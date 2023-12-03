@@ -100,7 +100,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    widows: 100%;
+    width: 100%;
     max-width: 1600px;
 
 }
