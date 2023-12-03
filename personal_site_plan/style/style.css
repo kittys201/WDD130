@@ -353,7 +353,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('/images/faq2.jpg') center/cover no-repeat;
+    background: url('https://kittys201.github.io/WDD130/personal_site_plan/images/faq2.jpg') center/cover no-repeat;
     opacity: 0.3; /* Ajusta la opacidad de la imagen de fondo */
     z-index: -1; /* Coloca el fondo detrás del contenido */
 }
