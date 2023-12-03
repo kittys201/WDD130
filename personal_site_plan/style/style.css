@@ -79,6 +79,9 @@ header a:hover {
     width: 50px;
 }
 
+#content > main > section:nth-child(1) > h2{color: #FFF;
+text-align: center;}
+
 #background {
     height: 725px;
     background-color: #9f86c0;
