@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Poppins&display=swap');
 
+@font-face {
+    font-family : 'Kalam';
+    font-style : normal;
+    font-weight : 400;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/kalam/v16/YA9dr0Wd4kDdMuhW.ttf) format('truetype');
+    }
+    @font-face {
+    font-family : 'Poppins';
+    font-style : normal;
+    font-weight : 400;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
+    }
+
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #231942   ;
@@ -56,7 +71,7 @@ nav {
 
 header a:hover {
     color: #5e548e;
-    text-emphasis-style: var(--nav-background-color);
+    text-emphasis-style:solid ;
 }
 
 .logo {
@@ -76,12 +91,15 @@ header #logo_link {
 
 footer {
     background-color: #9f86c0;
-    color: #000;
+    color: #fff;
     padding: 25px 50px;
     margin-top: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    widows: 100%;
+    max-width: 1600px;
+
 }
 
 footer a {
@@ -266,7 +284,7 @@ body {
     }
     
     #content {
-    padding-top: 70px;
+    padding-top: 100px;
     }
     
     body.scrolled #navbar {
@@ -285,3 +303,131 @@ body {
     
     footer {
     margin-top: 50px;}
+
+    section:nth-child(1) > img{
+        display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+        width: 40em;
+    }
+    
+     section:nth-child(1) > picture > img{   display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+        width: 10em;}
+    
+
+    
+
+
+    /* Agrega un estilo común para todos los artículos con imagen de fondo */
+.question {
+    position: relative;
+    color: #FFF; /* Color del texto sin transparencia */
+    padding: 20px;
+    margin-bottom: 20px; /* Agrega un espacio entre los artículos */
+}
+
+/* Establece la imagen de fondo y ajusta el tamaño */
+#question1,
+#question2,
+#question3 {
+    position: relative;
+}
+
+#question1::before,
+#question2::before,
+#question3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/images/faq2.jpg') center/cover no-repeat;
+    opacity: 0.3; /* Ajusta la opacidad de la imagen de fondo */
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+/* Ajusta el estilo del texto dentro de cada artículo si es necesario */
+.question h3,
+.question p {
+    z-index: 1; /* Asegura que el texto esté en la parte superior del fondo transparente */
+}
+
+/* Ajusta el estilo del texto dentro de cada artículo si es necesario */
+.question h3 {
+    color: #FFF; /* Ajusta el color del título según tus preferencias */
+}
+
+.question p {
+    color: #FFF; /* Ajusta el color del texto según tus preferencias */
+}
+
+#content > main > h1{
+     text-align: center;
+    color: #FFF;}
+
+#content > main > h3{
+     text-align: center;
+    color: #FFF;}
+    #content > main > article.contact-info
+    {display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
+        margin: 0 auto;
+        text-align: center;
+        color: #FFF;
+
+    }
+    #content article{
+        color: #FFF;
+    }
+
+    article.contact-info ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+     article.contact-info li {
+        margin-bottom: 10px;
+        color: #FFF; /* Color del texto de la información de contacto */
+    }
+    
+     article.contact-info li a {
+        color: #FFF; /* Color de los enlaces de la información de contacto */
+        text-decoration: none;
+    }
+    
+    article.contact-info a.whatsapp-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #25D366; /* Color de fondo del botón de WhatsApp */
+        color: #fff; /* Color del texto del botón de WhatsApp */
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+     article.contact-info a.whatsapp-button:hover {
+        background-color: #128C7E; /* Cambia el color al pasar el mouse sobre el botón de WhatsApp */
+    }
+    
+    #content > main > div:nth-child(3) > img {
+        display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+        width: 20em;}
+    
+        #content > main > article > img{
+            display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
+            margin: 0 auto; /* Centra la imagen horizontalmente */
+            width: 20em;}   
+
+            #content > main > h2{color: #FFF; /* Color de los enlaces de la información de contacto */
+                text-decoration: none;}
+
+                #content > main > div:nth-child(9){
+                    display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
+            margin: 0 auto;
+                    align-items: center;}
+
+                    .contact-info iframe {
+                        display: block;
+                        margin: 0 auto;
+                      }
