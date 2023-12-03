@@ -49,6 +49,7 @@
     max-width:1600px;
     margin:0 auto;
     scrollbar-color: #3498db #f1f1f1;
+    
 
 /* Barra de desplazamiento horizontal */
 scrollbar-width: thin;
@@ -89,6 +90,8 @@ header #logo_link {
     background-color: #9f86c0;
 }
 
+#content > main > div > h1{color: #FFF;
+text-align: center;}
 footer {
     background-color: #9f86c0;
     color: #fff;
@@ -110,6 +113,12 @@ footer a {
 #content > footer > p:nth-child(1) {
     color: #FFF;
 }
+
+#content > main > div > p{text-align: justify;
+color: #FFF;}
+
+#content > main > div > h3{text-align: center;
+color: #FFF;}
 
 footer p {
     font-size: 1.2em;
@@ -307,11 +316,13 @@ body {
     section:nth-child(1) > img{
         display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
         margin: 0 auto; /* Centra la imagen horizontalmente */
-        width: 40em;
+        width: 30em;
+        padding: 5px;
     }
     
      section:nth-child(1) > picture > img{   display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
         margin: 0 auto; /* Centra la imagen horizontalmente */
+        padding: 15px;
         width: 10em;}
     
 
@@ -362,13 +373,9 @@ body {
     color: #FFF; /* Ajusta el color del texto según tus preferencias */
 }
 
-#content > main > h1{
-     text-align: center;
-    color: #FFF;}
 
-#content > main > h3{
-     text-align: center;
-    color: #FFF;}
+
+
     #content > main > article.contact-info
     {display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
         margin: 0 auto;
@@ -412,22 +419,31 @@ body {
     #content > main > div:nth-child(3) > img {
         display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
         margin: 0 auto; /* Centra la imagen horizontalmente */
+        padding: 5px;
         width: 20em;}
+        
     
         #content > main > article > img{
             display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
             margin: 0 auto; /* Centra la imagen horizontalmente */
+            padding: 5px;
             width: 20em;}   
 
             #content > main > h2{color: #FFF; /* Color de los enlaces de la información de contacto */
                 text-decoration: none;}
 
-                #content > main > div:nth-child(9){
-                    display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
-            margin: 0 auto;
-                    align-items: center;}
+                #content > main > h1{
+                    text-align: center;
+                   color: #FFF;}
+               
+               #content > main > h3{
+                    text-align: center;
+                   color: #FFF;}
 
-                    .contact-info iframe {
-                        display: block;
-                        margin: 0 auto;
-                      }
+                   #content > main > section:nth-child(1) > h1:nth-child(1){
+                    text-align: center;
+                    color: #FFF;
+
+                   }
+                   #content > main > section:nth-child(1) > h1:nth-child(2){text-align: center;
+                    color: #FFF;}
