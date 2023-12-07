@@ -161,7 +161,20 @@ footer a:hover {
 }
 
 
+/* Estilo para la clase 'contact-photo' */
+.contact-photo {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: row; /* Alinea los elementos en una fila en lugar de una columna */
+}
 
+/* Estilo para las imágenes dentro de 'contact-photo' */
+.contact-photo img {
+    max-width: 40em; /* Establece el ancho máximo de las imágenes a 200px */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    margin: 10px; /* Espacio entre las imágenes */
+}
 
 
 /* Contact form */
@@ -407,6 +420,8 @@ body {
     
     article.contact-info a.whatsapp-button {
         display: inline-block;
+        text-align: center;
+        align-items: center;
         padding: 10px 20px;
         background-color: #25D366; /* Color de fondo del botón de WhatsApp */
         color: #fff; /* Color del texto del botón de WhatsApp */
@@ -450,3 +465,39 @@ body {
                    }
                    #content > main > section:nth-child(1) > h1:nth-child(2){text-align: center;
                     color: #FFF;}
+
+
+.back-info{
+    background-color: rgba(241, 148, 210, 0.3) ;
+    color: #FFF;
+   
+}
+
+.back-info input[type="text"],
+.back-info input[type="email"],
+.back-info textarea {
+    max-width: 100%; /* Establece el ancho máximo igual al contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px; /* Ajusta el espacio interno */
+    margin-bottom: 10px; /* Añade espacio entre los campos de entrada */
+    border: 1px solid #ccc; /* Añade un borde para mayor claridad */
+}
+
+.back-info input[type="submit"] {
+    /* Estilo para el botón de envío, si es necesario */
+    background-color: rgba(241, 148, 210, 0.8);
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px; /* Ajusta el espacio interno */
+    border: 1px solid #ccc; /* Añade un borde para mayor claridad */
+}
+#contact-info1 {
+    margin: 0 auto;
+    text-align: center;
+}
+#content > main > div:nth-child(5) {
+    margin: 0 auto;
+    text-align: center;
+}
