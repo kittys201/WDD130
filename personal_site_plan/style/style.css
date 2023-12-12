@@ -37,10 +37,40 @@
   --nav-background-color: #9f86c0;
   --nav-hover-link-color:#5e548e;
   --nav-hover-background-color: #231942;
+
+  /* Tamaños de fuente para una mejor legibilidad */
+  --heading-font-size: 1.5em; /* Ajusta según sea necesario */
+  --paragraph-font-size: 0.9em; /* Ajusta según sea necesario */
 }
 /* CSS */
 
+body {
+    font-family: var(--heading-font);
+    font-size: var(--heading-font-size);
+}
 
+h1 {
+    font-family: var(--heading-font);
+    font-size: var(--heading-font-size);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-font-size);
+}
+
+
+body{
+    font-family: var(--heading-font);
+
+}
+h1 {
+    font-family: var(--heading-font);
+  }
+  
+  p {
+    font-family: var(--paragraph-font);
+  }
 
 
 
@@ -81,6 +111,17 @@ header a:hover {
 
 #content > main > section:nth-child(1) > h2{color: #FFF;
 text-align: center;}
+
+#craft1 > p{
+    text-align: justify;}
+    #craft2 > p{
+        text-align: justify;}
+        #craft3 > p{
+            text-align: justify;}
+            #craft1 > ul > li{text-align: justify;
+            text-decoration: none;
+            }
+    
 
 #background {
     height: 725px;
@@ -205,14 +246,21 @@ footer a:hover {
 }
 
 #feedback {
-    background-color: antiquewhite;
+    background-color: var(--accent1-color);
     position: absolute;
+    margin-top: 0;
     top: 0;
     left: 0;
     right: 0;
     padding: .5em;
-    /* make this element invisible until we are ready for it */
-    display: none;      
+    margin-top: 100px;
+    
+    font-size: 1.5em;
+    
+    display: none;
+    max-width: 100%;
+
+         
 }
 .moveDown {
     margin-top: 3em;
@@ -374,6 +422,8 @@ body {
     z-index: -1; /* Coloca el fondo detrás del contenido */
 }
 
+
+
 /* Ajusta el estilo del texto dentro de cada artículo si es necesario */
 .question h3,
 .question p {
@@ -389,8 +439,24 @@ body {
     color: #FFF; /* Ajusta el color del texto según tus preferencias */
 }
 
-
-
+#question3:hover{
+    background: #5e548e;
+}
+#question2:hover{
+    background: #5e548e;
+}
+#question1:hover{
+    background: #5e548e;
+}
+#question3 p{
+    text-align: justify;
+}
+#question2 p{
+    text-align: justify;
+}
+#question1 p{
+    text-align: justify;
+}
 
     #content > main > article.contact-info
     {display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
@@ -401,6 +467,11 @@ body {
     }
     #content article{
         color: #FFF;
+       
+    }
+
+    #content > main > div.back-info > article > p{
+        text-align: justify;
     }
 
     article.contact-info ul {
@@ -418,34 +489,39 @@ body {
         text-decoration: none;
     }
     
-    article.contact-info a.whatsapp-button {
-        display: inline-block;
-        text-align: center;
-        align-items: center;
-        padding: 10px 20px;
-        background-color: #25D366; /* Color de fondo del botón de WhatsApp */
-        color: #fff; /* Color del texto del botón de WhatsApp */
-        text-decoration: none;
-        border-radius: 5px;
-        margin-top: 10px;
-    }
-    
-     article.contact-info a.whatsapp-button:hover {
-        background-color: #128C7E; /* Cambia el color al pasar el mouse sobre el botón de WhatsApp */
-    }
-    
+article.contact-info a.whatsapp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25D366; /* Color de fondo del botón de WhatsApp */
+    color: rgb(231, 59, 203); /* Color del texto del botón de WhatsApp */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+ article.contact-info a.whatsapp-button:hover {
+    background-color: #c98c2b; /* Cambia el color al pasar el mouse sobre el botón de WhatsApp */
+    color: var(--nav-hover-background-color);
+}
+#contactForm > input[type=submit]:nth-child(7):hover{
+  color: #9f86c0;
+}
+
+#contact-info1 > ul > li > a:hover{
+    color: var(--nav-hover-link-color);
+}
     #content > main > div:nth-child(3) > img {
         display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
         margin: 0 auto; /* Centra la imagen horizontalmente */
         padding: 5px;
-        width: 20em;}
+        width: 18em;}
         
     
         #content > main > article > img{
             display: block; /* Asegura que la imagen sea un bloque para aplicar márgenes automáticos */
             margin: 0 auto; /* Centra la imagen horizontalmente */
             padding: 5px;
-            width: 20em;}   
+            width: 18em;}   
 
             #content > main > h2{color: #FFF; /* Color de los enlaces de la información de contacto */
                 text-decoration: none;}

@@ -51,9 +51,15 @@
     <div id="feedback"></div>
     <h2>Contact Us</h2>
     <form class="form1" method="post" id="contactForm">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message"></textarea>
+        <label for="user_name">Your Name:</label>
+        <input type="text" id="user_name" name="user_name" placeholder="Your name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" placeholder="Your message"></textarea>
+
         <input type="submit" value="Send">
     </form>
 </div>
@@ -112,5 +118,11 @@
         });
     });
 </script>
+<link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+<a id="robbu-whatsapp-button" class="rigth" target="_blank" href="https://api.whatsapp.com/send?phone=5511933880201&text=Hello">
+  <div class="rwb-tooltip">Whatsapp</div>
+  <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg" alt="whatsapp-button">
+</a>       
+</div> 
 </body>
 </html>
